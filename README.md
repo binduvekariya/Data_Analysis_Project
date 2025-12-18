@@ -25,7 +25,7 @@ In the on-demand food delivery industry, providing an accurate **Estimated Time 
 * **Geospatial Distance:** Calculated the direct distance between the restaurant and the delivery location using latitude and longitude.
 * **Time Analysis:** Extracted order preparation lag and categorized delivery windows (Morning, Afternoon, Evening, Night).
 * **Categorical Encoding:** Applied One-Hot and Label Encoding to handle variables like **Weather conditions** and **Traffic density**.
-  ![Feature_Engineering](feature_engineering.png)
+  ![Feature_Engineering](images/feature_engineering.png)
 
 ### 2. Comparative Modeling
 I tested multiple algorithms to find the best fit for this high-variance data:
@@ -41,15 +41,15 @@ I tested multiple algorithms to find the best fit for this high-variance data:
 
 #### I. Model Performance
 This chart shows that XGBoost had the highest R² score, making it our primary model for predictions.
-![Model Comparison](model_comparison.png)
+![Model Comparison](images/model_comparison.png)
 
 #### II. Traffic & Environmental Impact
 We observed a direct correlation between high traffic density ("Jam") and increased delivery times.
-![Traffic Impact](traffic_impact.png)
+![Traffic Impact](images/traffic_impact.png)
 
 #### III. Feature Relationships
 The heatmap below illustrates how different variables like delivery person age and ratings interact with the time taken.
-![Correlation Heatmap](correlation_heatmap.png)
+![Correlation Heatmap](images/correlation_heatmap.png)
 
 
 ---
